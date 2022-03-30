@@ -1,0 +1,22 @@
+.cart {
+    &-left-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #000;
+    }
+    &-image {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    &-name {
+        color: #000;
+        max-width: 200px;
+        width: 200px;
+    }
+    &-quantity {
+        color: #000;
+    }
+}

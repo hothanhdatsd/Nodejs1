@@ -1,0 +1,49 @@
+.create {
+    background-color: #E7F0F2;
+    width: 400px;
+    padding: 20px;
+    &-contain {
+        background-color: #E7F0F2;
+        padding-left: 50px;
+        color: #000;
+        font-weight: 400;
+        font-size: 18px;
+        padding-left: 348px;
+        padding-bottom: 40px;
+        margin-top: 20px;
+    }
+    &-heading {
+        font-weight: 700;
+        font-size: 40px;
+        color: #000;
+        padding-left: 30px;
+    }
+    &-name {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    &-condition {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    &-price {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    &-img {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    &-desc {
+        margin-top: 2px;
+        margin-bottom: 10px;
+    }
+    &-submit {
+        width: 120px;
+        height: 40px;
+        margin-top: 10px;
+        background-color: #E7F0F2;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+}

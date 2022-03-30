@@ -1,0 +1,59 @@
+{{!--
+</div>
+{{#each courses}}
+<div class="contain">
+    <span class="prod-index">{{ @index }}</span>
+    <span class="prod-name">{{this.Name}}</span>
+    <span class="prod-price">{{this.price}}</span>
+    <span class="prod-condition">{{this.condition}}</span>
+    <span class="prod-created">{{this.Created}}</span>
+    <a href="/courses/{{this._id}}/edit">
+        <button>Sửa</button>
+    </a>
+    <button>Xóa</button>
+</div>
+{{/each }}
+</div> --}}
+
+<div class="wrapper">
+    <div class="container">
+        <div class="me">
+
+            <div class="me-prod">
+                <p class="prod-index">
+                    STT
+                </p>
+                <p class="prod-name">
+                    NAME
+                </p>
+                <p class="prod-price">
+                    PRICE
+                </p>
+                <p class="prod-condition">
+                    CONDITION
+                </p>
+                <p class="prod-created">CREATED</p>
+                <p class="prod-tool">ACTION</p>
+
+            </div>
+        </div>
+        {{#each courses}}
+        <div class="contain">
+            <span class="prod-index">{{ @index }}</span>
+            <span class="prod-name">{{this.Name}}</span>
+            <span class="prod-price">{{this.price}}</span>
+            <span class="prod-condition">{{this.condition}}</span>
+            <span class="prod-created">{{this.Created}}</span>
+
+            <a href="/courses/{{this._id}}/edit">
+                <button class="prod-update">Sửa</button>
+            </a>
+            <a href="/courses/{{this._id}}/delete">
+                <button class="prod-del">Xóa</button>
+            </a>
+        </div>
+        {{/each }}
+    </div>
+</div>
+</div>
+</div>

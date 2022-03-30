@@ -1,0 +1,26 @@
+<div class='wrapper'>
+	<div class='conainer'>
+		<div class='detail'>
+			<div class='detail-main'>
+				<img src='{{course.image}}' alt='' class='detail-img' />
+				<div class='detail-desc'>
+					<p class='detail-name'>{{course.Name}}</p>
+					<p class='detail-price'>{{course.price}}</p>
+					<p class='detail-info'>{{course.desc}}</p>
+					<div class='detail-btn'>
+
+						{{#if session.loggedin}}
+							<a href='/cart/add/{{course._id}}'>
+								<button class='detail-add'>Thêm vào giỏ hàng</button>
+							</a>
+						{{else}}
+							<a href='/user/signin'>
+								<button class='detail-add'>Thêm vào giỏ</button>
+							</a>
+						{{/if}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

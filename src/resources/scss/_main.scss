@@ -1,0 +1,97 @@
+// .main {
+//     margin: 0;
+//     display: flex;
+//     align-items: center;
+//     &-main {
+//         display: flex;
+//         background-color: #373943;
+//     }
+//     &-nav {
+//         padding-top: 40px;
+//         background-color: #25272E;
+//         width: 300px;
+//         padding-left: 50px;
+//         padding-right: 30px;
+//         height: 1200px;
+//     }
+//     &-left {
+//         border-right: 1px solid #383940;
+//     }
+//     &-menu {
+//         margin: 0;
+//         list-style: none;
+//         padding-left: 0;
+//     }
+//     &-item {
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         font-size: 16px;
+//         font-weight: 500;
+//         padding-bottom: 15px;
+//         border-bottom: 1px solid #383940;
+//         cursor: pointer;
+//     }
+//     &-icon {
+//         width: 20px;
+//         height: 20px;
+//     }
+// }
+.active {
+    font-weight: 500;
+    opacity: 1;
+}
+
+.main {
+    display: flex;
+    color: #000;
+    justify-content: space-between;
+    &-menu {
+        border-left: 1px solid #E7F0F2;
+    }
+    &-nav {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-top: 500px;
+    }
+    &-item {
+        margin: 15px 15px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-list {
+        border-right: 1px solid #E7F0F2;
+    }
+    &-fil {
+        margin-top: 40px;
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 400;
+        &-item {
+            margin: 15px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &-page {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-index {
+        letter-spacing: 20px;
+        color: #000;
+        text-align: center;
+        margin-top: 40px;
+        opacity: 0.3;
+        padding-top: 8px;
+        border-top: 2px solid #E7F0F2;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &-contain {}
+}

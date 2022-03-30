@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="create-contain">
+            <form method="POST" action="/user/validate" class="create">
+                <h1 class="create-heading">Đăng nhập</h1>
+                
+                {{#if error}}
+                <div style="margin-top: 10px; margin-bottom: 10px; color: red">{{ error }}!</div>
+                {{/if}}
+
+                <label for="name">Tên tài khoản</label>
+                <input type="text" class="create-name" name="name">
+                <label for="password">Mật khẩu</label>
+                <input type="password" class="create-price" name="password">
+                <button type="submit" class="create-submit">Thêm</button>
+            </form>
+        </div>
+    </div>
+</div>

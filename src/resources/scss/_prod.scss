@@ -1,0 +1,54 @@
+.prod {
+    background-color: #E7F0F2;
+    color: #000;
+    text-align: center;
+    &-heading {
+        color: #38F2AF;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    &-index {
+        font-size: 20px;
+        padding-left: 30px;
+        width: 50px;
+    }
+    &-name {
+        font-size: 20px;
+        padding-left: 70px;
+        width: 420px;
+    }
+    &-price {
+        font-size: 20px;
+        margin-left: 90px;
+        width: 80px;
+    }
+    &-created {
+        padding-left: 80px;
+        font-size: 20px;
+    }
+    &-condition {
+        width: 100px;
+        font-size: 20px;
+        margin-left: 60px;
+    }
+    &-update {
+        margin-left: 20px;
+    }
+    &-del {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    &-tool {
+        padding-left: 340px;
+        font-size: 20px;
+    }
+}
+
+.contain {
+    display: flex;
+    background-color: #E7F0F2;
+    border-bottom: 1px solid #000;
+    padding: 10px 0 10px 0;
+    color: #000;
+}

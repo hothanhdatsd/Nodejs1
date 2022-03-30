@@ -1,0 +1,35 @@
+<div class='wrapper'>
+	<div class='container'>
+		<div class='main-contain'>
+			<p class='detail-title'>Giỏ hàng</p>
+
+			<div class='cart'>
+				{{#each cart}}
+					<div class='cart-item'>
+						<div class='cart-left-item'>
+							<div class='cart-inline'>
+								<img src='{{this.productId.image}}' class='cart-image' alt='image' />
+							</div>
+
+							<div class='cart-inline cart-product'>
+								<p class='cart-name'>{{this.productId.Name}}</p>
+							</div>
+							<div class="cart-inline cart-product">
+								<p class='cart-quantity'>Số lượng: {{this.quantity}}</p>
+							</div>
+							<div class="cart-inline cart-product">
+								<p class='cart-quantity'>Đơn giá: {{this.productId.price }}</p> 
+							</div>
+						<div class='cart-action'>
+							<a href='/cart/delete/{{this._id}}'>
+								<button class='button hero-price'>Xoá</button>
+							</a>
+						</div>
+						</div>
+
+					</div>
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</div>

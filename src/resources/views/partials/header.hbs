@@ -1,0 +1,67 @@
+<div class='wrapper'>
+	<div class='container'>
+		<header class='header'>
+			<a href='/'>
+				<h1 class='header-header'>Freebie Market</h1>
+			</a>
+			<div class='header-dashboard'>
+				{{#if session.loggedin}}
+				<a href='/courses/create'>
+					<button class='header-item'>Thêm sản phẩm</button>
+				</a>
+
+				<a href='/me/stored/courses'>
+					<button class='header-item'>Quản lý sản phẩm</button>
+				</a>
+				{{/if}}
+
+				<a href='/'>
+					<button class='header-item'>Tổng quan</button>
+				</a>
+			</div>
+
+			<div class='header-right'>
+				<input type='text' class='header-input' placeholder='PRODUCT' />
+				<ion-icon name='search' class='header-icon2'></ion-icon>
+			</div>
+
+			{{#if session.loggedin}}
+
+			<a href='#'>
+				<div class='header-user signup'>
+					<ion-icon class='header-user-icon' name='person'></ion-icon>
+					<span class='header-user-name'>{{session.user.name}}</span>
+				</div>
+			</a>
+
+			<a href='/user/logout'>
+				<div class='header-user signin'>
+					<ion-icon class='header-user-icon' name='log-out-outline'></ion-icon>
+					<span class='header-user-name'>Thoát</span>
+				</div>
+			</a>
+
+			<a href='/cart'>
+				<ion-icon name='cart' class='header-cart'></ion-icon>
+			</a>
+
+			{{else}}
+			<a href='/user/signup '>
+				<div class='header-user signup'>
+					<ion-icon class='header-user-icon' name='person'></ion-icon>
+					<span class='header-user-name'>Đăng ký</span>
+				</div>
+			</a>
+
+			<a href='/user/signin'>
+				<div class='header-user signin'>
+					<ion-icon class='header-user-icon' name='person'></ion-icon>
+					<span class='header-user-name'>Đăng nhập</span>
+				</div>
+			</a>
+
+			{{/if}}
+
+		</header>
+	</div>
+</div>

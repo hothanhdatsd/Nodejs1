@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="create-contain">
+            <form method="POST" action="/courses/{{course._id}}?_method=PUT" class="create">
+                <h1 class="create-heading">Sửa sản phẩm</h1>
+                <label for="Name">Tên sản phẩm</label>
+                <input type="text" class="create-name" name="Name" value="{{course.Name}}">
+                <label for="image">Hình ảnh</label>
+                <input type="text" class="create-img" name="image" value="{{course.image}}">
+                <label for=" price">Giá tiền</label>
+                <input type="text" class="create-price" name="price" value=" {{course.price}}">
+                <label for="condition">Tình trạng</label>
+                <input type="text" class="create-condition" name="condition" value=" {{course.condition}}">
+                <label for="count">Số lượng</label>
+                <input type="text" class="create-count" name="count" value="{{course.count}}">
+                <label for="desc">Chi tiết</label>
+                <input type="text" class="create-desc" name="desc" value="{{course.desc}}">
+                <button type=" submit" class="create-submit">Lưu</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,193 @@
+{{!-- <div class="wrapper">
+    {{#each courses}}
+    <div class="container">
+        <a href="/course/{{this.slug}}">
+            <span class="container-heading">{{this.Name}}</span>
+        </a>
+        <a href="/course/{{this.slug}}">
+            <img src="{{this.image}}" alt="" class="container-img">
+        </a>
+        <span class="container-desc">{{this.Desc}}</span>
+    </div>
+    {{/each}}
+</div> --}}
+
+{{!-- <div class="wrapper">
+    <div class="wrapper-flex">
+        <div class="main">
+            <div class="container">
+                <div class="main-main">
+                    <div class="main-left">
+                        <div class="main-nav">
+                            <ul class="main-menu">
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Status
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Price
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Collections
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Chains
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Categories
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                                <li class="main-item">
+                                    <span class="main-title">
+                                        Sale
+                                    </span>
+                                    <ion-icon class="main-icon" name="chevron-down-outline"></ion-icon>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+            <div class="hero-graphics">
+                <div class="hero-header">
+                    <p class="hero-heading">Cryptographics </p>
+                    <div class="hero-btn">
+                        <div class="hero-recent">
+                            <span class="hero-title">Recent</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <div class="hero-recent">
+                            <span class="hero-title">Low to high</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <div class="hero-recent">
+                            <span class="hero-title">All</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-main">
+                {{#each courses}}
+                <div class="hero-prod">
+                    <a href="/courses/{{this.slug}}">
+                        <img src="{{this.image}}" alt="" class="hero-img">
+                    </a>
+                    <a href="/courses/{{this.slug}}">
+                        <p class="hero-name primary">{{this.Name}}</p>
+                    </a>
+                    <div class="hero-bottom">
+                        <span class="hero-price">
+                            {{this.price}}
+                        </span>
+                        <a href="">
+                            <button class="hero-price button">Mua ngay</button>
+                        </a>
+                        <span class="hero-count">{{this.condition}}</span>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+
+        </div>
+    </div>
+
+</div> --}}
+<div class="wrapper">
+    <div class="container">
+        <div class="main-contain">
+            <div class="main">
+                <div class="main-nav">
+                    <ul class="main-menu">
+                        <li class="main-item">featured</li>
+                        <li class="main-item active">category 1</li>
+                        <li class="main-item">category 2</li>
+                        <li class="main-item">category 3</li>
+                        <li class="main-item">category 4</li>
+                        <li class="main-item">category 5</li>
+                    </ul>
+                </div>
+                <div class="main-product">
+                    <div class="hero-main">
+                        {{#each courses}}
+                        <div class="hero-prod">
+                            <a href="/courses/{{this.slug}}">
+                                <img src="{{this.image}}" alt="" class="hero-img">
+                            </a>
+                            <a href="/courses/{{this.slug}}">
+                                <p class="hero-name ">{{this.Name}}</p>
+                            </a>
+                            <div class="hero-bottom">
+                                <span class="hero-price">
+                                    {{this.price}}
+                                </span>
+                                <a href="">
+                                    <button class="hero-price button">Mua ngay</button>
+                                </a>
+                                <span class="hero-count">{{this.condition}}</span>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+                <div class="main-fil">
+                    <ul class="main-list">
+                        <li class="main-fil-item">all</li>
+                        <li class="main-fil-item active">filter 1</li>
+                        <li class="main-fil-item">filter 2</li>
+                        <li class="main-fil-item">filter 3</li>
+                        <li class="main-fil-item">filter 4</li>
+                        <li class="main-fil-item">filter 5</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-page">
+
+                <a href="/page/1" class="main-index ">
+                    1
+                </a>
+                <a href="/page/2" class="main-index ">
+                    2
+                </a>
+
+                <a href="/page/3" class="main-index ">
+                    3
+                </a>
+                <a href="/page/4" class="main-index ">
+                    4
+                </a>
+                <a href="/page/5" class="main-index ">
+                    5
+                </a>
+                <a href="/page/6" class="main-index ">
+                    6
+                </a>
+                <a href="/page/7" class="main-index ">
+                    7
+                </a>
+                <a href="/page/8" class="main-index ">
+                    8
+                </a>
+                <a href="/page/9" class="main-index ">
+                    9
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
